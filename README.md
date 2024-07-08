@@ -48,6 +48,15 @@ sudo apt-get install openmpi-bin openmpi-common openmpi-doc libopenmpi-dev
 bash GS_Satnet_Simulation.sh
 '''
 
+## How to tailor
+
+(1) If you want to change the satellite-ground topology: Read ns-3/cpp codes in 'MeshNet_connected_ip2_route_trace_goundnet.cc', and modify it under the framework.
+
+(2) If you want to simulate more algorithm: Write your own algorithm transcript, then put into 'LinkingLogic_Decision' folder. Make sure that your codes can output '_sat1.txt' & '_sat2.txt'.
+
+(3) Other details: You can change them in transcript 'GS_Satnet_Simulation.sh' as you like.
+
+
 ## Output
 You can get four valuation output after running the project:
 - ave_PLR: average packet loss rate
@@ -79,11 +88,3 @@ End to End Jitter delay = +0ns
 ```
 
 
-
-## How to tailor
-
-(1) If you want to change the satellite-ground topology: Read ns-3/cpp codes in 'MeshNet_connected_ip2_route_trace_goundnet.cc', and modify it under the framework.
-
-(2) If you want to simulate more algorithm: Write your own algorithm transcript, then put into 'LinkingLogic_Decision' folder. Make sure that your codes can output '_sat1.txt' & '_sat2.txt'.
-
-(3) If you want to 
