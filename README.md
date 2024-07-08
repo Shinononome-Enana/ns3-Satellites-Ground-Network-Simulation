@@ -37,8 +37,11 @@ sudo apt-get install openmpi-bin openmpi-common openmpi-doc libopenmpi-dev
 - 'MeshNet_connected_ip2_route_trace_goundnet.cc' should be put into the floder named 'scratch'.
 - 'NSH.cc','NSD.cc','LRST.cc' should be put into the floder named 'LinkingLogic_Decision'. (If there's no floder named 'LinkingLogic_Decision', you can create one under 'ns-3.37' route)
 - 'GS_Satnet_Simulation.sh' should just be put under 'ns-3.37' route.
+
 (2) Run Algorithm: Run the algorithm transcript(NSH.cc or NSD.cc or LRST.cc), then you'll get output files '_sat1.txt' & '_sat2.txt'.
+
 (3) Choose the algorithm: 'GS_Satnet_Simulation.sh' line20-29, you can choose the algorithm you want to simulate.
+
 (4) Open the terminal under the route 'ns-3.37', then:
 '''
 bash GS_Satnet_Simulation.sh
